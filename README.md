@@ -5,13 +5,13 @@ This is a tutorial on how to use Integration / End-to-end testing In ASP.net Cor
 Net 8
 
 ## How to Run
-### Make sure you have net 8 installed
+### Make sure you have Net 8 installed
 > dotnet --list-sdks
 If you don't have it, download it [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ### Clone and run this repo
 First, Clone the repo
-You can run and test using the Dotnet CLI or tools in your IDE (Visual Studio, Rider, etc)
+You can run and test using the Dotnet CLI or tools in your IDE (Visual Studio, Rider, etc.)
 
 To use the CLI:
 Open a terminal (like Powershell) and go to the same folder were the Solution is created (Rd_Asp_IntegrationTests.sln)
