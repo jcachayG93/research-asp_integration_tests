@@ -32,6 +32,24 @@ public class InMemoryRepository : IRepository
         return default;
     }
 
+    private bool IsOfType<T>(Guid key)
+    {
+        if (_data.TryGetValue(key, out var json))
+        {
+            try
+            {
+                var payload = JsonSerializer.Deserialize<T>(json);
+                return true;
+            }
+            catch (Exception _)
+            {
+                return false;
+            }
+        }
+
+        return false;
+    }
+
     private void Remove(Guid key)
     {
         _data.Remove(key);
@@ -65,5 +83,16 @@ public class InMemoryRepository : IRepository
                 break;
             }
         }
+    }
+
+    public IEnumerable<T> GetAll<T>()
+    {
+        return _data
+            // Filter those that match the type T
+            .Where(item =>
+                IsOfType<T>(item.Key))
+            // Map and assert is not null
+            .Select(item => ReadRaw<T>(item.Key)!)
+            .ToArray();
     }
 }

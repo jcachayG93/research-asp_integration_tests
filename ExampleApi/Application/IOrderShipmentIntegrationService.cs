@@ -3,7 +3,7 @@
 /// <summary>
 /// This is not an integration events mechanism, but for the purpose of this project, works like it.
 /// </summary>
-public interface IOrderShipmentService
+public interface IOrderShipmentIntegrationService
 {
     /*
      * In a real scenario, you would publish an integration event and this will be handled some were else in the system.

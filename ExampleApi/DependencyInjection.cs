@@ -12,7 +12,8 @@ public static class DependencyInjection
          * context of the same request, and therefore, share the same instance (which contains the same data in memory)
          */
         services.AddScoped<IRepository, InMemoryRepository>();
-        services.AddScoped<IOrderShipmentService, OrderShipmentService>();
+        services.AddScoped<IOrderShipmentIntegrationService, OrderShipmentIntegrationService>();
+        services.AddScoped<IShipmentsQueryService, ShipmentsQueryService>();
 
         return services;
     }

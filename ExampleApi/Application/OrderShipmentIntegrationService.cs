@@ -2,11 +2,11 @@
 
 namespace ExampleApi.Application;
 
-public class OrderShipmentService : IOrderShipmentService
+public class OrderShipmentIntegrationService : IOrderShipmentIntegrationService
 {
     private readonly IRepository _repository;
 
-    public OrderShipmentService(IRepository repository)
+    public OrderShipmentIntegrationService(IRepository repository)
     {
         _repository = repository;
     }

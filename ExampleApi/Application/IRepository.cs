@@ -26,4 +26,9 @@ public interface IRepository
     /// Deletes a Shipment
     /// </summary>
     void DeleteShipmentByOrderId(Guid orderId);
+
+    /// <summary>
+    /// Gets all items for a given type
+    /// </summary>
+    IEnumerable<T> GetAll<T>();
 }
