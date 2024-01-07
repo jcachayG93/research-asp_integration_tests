@@ -14,7 +14,7 @@ First, Clone the repo
 You can run and test using the Dotnet CLI or tools in your IDE (Visual Studio, Rider, etc.)
 
 To use the CLI:
-Open a terminal (like Powershell) and go to the same folder were the Solution is created (Rd_Asp_IntegrationTests.sln)
+Open a terminal (like Powershell) and go to the same folder where the Solution is created (Rd_Asp_IntegrationTests.sln)
 
 To run:
 > dotnet run
@@ -26,12 +26,12 @@ To run:
 
 ## Follow the tutorial
 
-It is easier to learn by doing. So, follow the suggested steps below.
+It is easier to learn by doing. To do so, you can follow the steps below.
 
 ### Delete the test project
 Delete the **ExampleApi.e2e.test.csproj** project and all its files
 
-### Follow along the tutorial in the WIKI
+### Follow along with the tutorial in the WIKI
 [Wiki](https://github.com/jcachayG93/research-asp_integration_tests/wiki)
 
 # About the Example Api Application
@@ -39,10 +39,10 @@ This is intended to present the context of the application being tested.
 There are two entities:
 
 About simplifications
-> The intention of this project is to demo how to test, not the design of the App. So This is not a Domain Driven Design correct application.
+> The intention of this project is to demo how to test, not the App's design. So this is different from a domain-driven design correct application.
 
 ### Order
-Some customer placed an order for something (details irrelevant)
+Some customers placed an order for something (details irrelevant)
 
 ### Shipment
 Represents a shipment for an order.
@@ -55,7 +55,7 @@ following these business rules:
 
 > When an order is deleted, a shipment is also deleted.
 
-But, there is no direct relationship between Orders and Shipments, in fact, they belong to different Bounded Contexts and they have to be kept in sync via an integration mechanism (in this example, by a service)
+But, there is no direct relationship between Orders and Shipments; in fact, they belong to different Bounded Contexts, and they have to be kept in sync via an integration mechanism (in this example, by a service)
 
 ### Endpoints
 | API                   | Verb   | Description                                                      | Request body             | Response                                               |
