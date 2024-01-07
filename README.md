@@ -38,6 +38,9 @@ Delete the **ExampleApi.e2e.test.csproj** project and all its files
 This is intended to present the context of the application being tested.
 There are two entities:
 
+About simplifications
+> The intention of this project is to demo how to test, not the design of the App. So This is not a Domain Driven Design correct application.
+
 ### Order
 Some customer placed an order for something (details irrelevant)
 
