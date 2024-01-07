@@ -7,7 +7,7 @@ Net 8
 ## How to Run
 ### Make sure you have net 8 installed
 > dotnet --list-sdks
-If you don't have it, install it from [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+If you don't have it, download it [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ### Clone and run this repo
 First, Clone the repo
