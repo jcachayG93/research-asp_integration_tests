@@ -45,8 +45,7 @@ About simplifications
 Some customer placed an order for something (details irrelevant)
 
 ### Shipment
-Somehow, the order results in a shipment, but, they do not belong to the same
-bounded context.
+When an order is created, a shipment must be also created, but there is no direct relationship between Order and Shipment. This is done via an integration mechanism (in this example, a service)
 
 ### Integration
 So, in this example, the shipments and orders must be synchronized,
