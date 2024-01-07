@@ -45,15 +45,17 @@ About simplifications
 Some customer placed an order for something (details irrelevant)
 
 ### Shipment
-When an order is created, a shipment must be also created, but there is no direct relationship between Order and Shipment. This is done via an integration mechanism (in this example, a service)
+Represents a shipment for an order.
 
 ### Integration
-So, in this example, the shipments and orders must be synchronized,
-following these rules:
+The shipments and orders must be synchronized,
+following these business rules:
 
 > When an order is created, a shipment is also created.
 
 > When an order is deleted, a shipment is also deleted.
+
+But, there is no direct relationship between Orders and Shipments, in fact, they belong to different Bounded Contexts and they have to be kept in sync via an integration mechanism (in this example, by a service)
 
 ### Endpoints
 | API                   | Verb   | Description                                                      | Request body             | Response                                               |
