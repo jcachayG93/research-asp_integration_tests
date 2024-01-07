@@ -1,6 +1,28 @@
-# What will we do
-Use integration tests to verify two different entities are synchronized via a 
-mechanism like Integration Events. These tests will be running against the real API from an external test project.
+# About
+This is a tutorial on how to use Integration / End-to-end testing In ASP.net Core
+
+## Technologies
+Net 8
+
+## How to Run
+### Make sure you have net 8 installed
+> dotnet --list-sdks
+If you don't have it, install it from [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+
+### Clone and run this repo
+First, Clone the repo
+You can run and test using the Dotnet CLI or tools in your IDE (Visual Studio, Rider, etc)
+
+To use the CLI:
+Open a terminal (like Powershell) and go to the same folder were the Solution is created (Rd_Asp_IntegrationTests.sln)
+
+To run:
+> dotnet run
+
+#### To run, in the root (same folder as ExampleApi.csproj), run this:
+> dotnet run --project ExampleApi
+#### To test:
+> dotnet test
 
 ## About the Example Api Application
 There are two entities:
