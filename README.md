@@ -26,7 +26,7 @@ To run:
 
 ## Follow the tutorial
 
-It is easier to learn if you do it. So, follow the suggested steps below.
+It is easier to learn by doing. So, follow the suggested steps below.
 
 ### Delete the test project
 Delete the **ExampleApi.e2e.test.csproj** project and all its files
