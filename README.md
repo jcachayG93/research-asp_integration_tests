@@ -24,7 +24,15 @@ To run:
 #### To test:
 > dotnet test
 
-## About the Example Api Application
+## Follow the tutorial
+### Delete the test project
+Delete the **ExampleApi.e2e.test.csproj** project and all its files
+
+### Follow along the tutorial in the WIKI
+[Wiki](https://github.com/jcachayG93/research-asp_integration_tests/wiki)
+
+# About the Example Api Application
+This is intended to present the context of the application being tested.
 There are two entities:
 
 ### Order
